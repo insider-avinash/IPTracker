@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,200;0,300;0,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f1c40f;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  text-align: center;
+  margin: 2rem;
+  font-family: "Indie Flower", cursive;
+}
+.loader-container {
+  display: none;
+}
+
+.loader {
+  width: 10px;
+  height: 35px;
+  background: #0652dd;
+  margin: 4px;
+  animation: loading 1s ease-in-out infinite alternate;
+}
+.loader1 {
+  animation: loading 1s ease-in-out infinite alternate;
+}
+.loader2 {
+  animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+.loader3 {
+  animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ip-display,
+.location-display,
+.latitude,
+.longitude {
+  font-size: 3rem;
+}
+.details {
+  text-align: center;
+}
+
+.lookup-btn {
+  border: none;
+  background: #2f3640;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  transition: 0.8s ease;
+}
+
+.lookup-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@keyframes loading {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
